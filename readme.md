@@ -1,6 +1,3 @@
-Voici un modèle de **README** pour un projet de jeu d'échecs :
-
----
 
 # Jeu d'Échecs en Python avec Pygame
 
