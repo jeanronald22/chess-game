@@ -8,6 +8,7 @@ def draw_board(screen):
 
     :param screen: ecran principal
     :type screen: """
+
     cell_size = HAUTEUR // 8  # Taille d'une cellule de l'échiquier (carré)
     board_size = cell_size * 8  # Taille totale de l'échiquier (900px)
 
@@ -24,7 +25,4 @@ def draw_board(screen):
     sidebar_x = board_size
     pygame.draw.rect(screen, 'light gray', [sidebar_x, 0, LARGEUR - board_size, HAUTEUR])
 
-    # Ajout des lignes de grille sur l'échiquier
-    for i in range(9):  # 9 lignes/grilles (8 cellules + bordures)
-        pygame.draw.line(screen, 'black', (0, i * cell_size), (board_size, i * cell_size), 2)
-        pygame.draw.line(screen, 'black', (i * cell_size, 0), (i * cell_size, board_size), 2)
+    pygame.draw.line(screen, 'black', (board_size, 0), (board_size, sidebar_x), 2)

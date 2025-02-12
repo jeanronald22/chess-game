@@ -13,7 +13,7 @@ def draw_pieces(screen):
         index = piece_list.index(white_pieces[i])
         if white_pieces[i] == 'pawn':
             screen.blit(
-                white_pawn, (white_locations[i][0] * 100 + 22, white_locations[i][1] * 100 + 30)
+                white_pawn, (white_locations[i][0]*100+20, white_locations[i][1]*100+20)
             )
         else:
             screen.blit(white_images[index], (white_locations[i]
